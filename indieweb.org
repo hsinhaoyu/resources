@@ -1,0 +1,3 @@
+* Useful links about IndieWeb
+** Hugo
+- /Build Websites with Hugo/ is a very useful book about Hugo.
