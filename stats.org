@@ -1,4 +1,4 @@
 * Useful stuff about statistics
 ** Survival analysis
-  - Clark et al. (2003) Survival Analysis Part I: Basic concepts and first analyses. _British Journal of Cancer. [[https://www.nature.com/articles/6601118][(link)]]
-  - Bradburn et al (2003) Survival Analysis Part II: Multivariate data analysis – an introduction to concepts and methods. _British Journal of Cancer_ [[https://www.nature.com/articles/6601119][(link)]]
+  - Clark et al. (2003) Survival Analysis Part I: Basic concepts and first analyses. /British Journal of Cancer/ [[https://www.nature.com/articles/6601118][(link)]]
+  - Bradburn et al (2003) Survival Analysis Part II: Multivariate data analysis – an introduction to concepts and methods. /British Journal of Cancer/ [[https://www.nature.com/articles/6601119][(link)]]
