@@ -1,3 +1,4 @@
 * Useful links about IndieWeb
 ** Hugo
-- /Build Websites with Hugo/ is a very useful book about Hugo.
+I needed a quick tutorial on the basic design of Hugo. This little book was exactly what I was looking for. 
+- /Build Websites with Hugo/ by Brian Hogan.
