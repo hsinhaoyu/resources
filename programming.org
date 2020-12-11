@@ -1,0 +1,5 @@
+* Numerical methods 
++ [[https://www.nature.com/articles/s41586-020-2649-2][Array programming with NumPy]]: Published in Nature! A good overview of Numpy.
+
+* Scheme programming
++ [[https://www.cs.unm.edu/~williams/cs357/springer-friedman.pdf][Scheme and the art of programming:]] This is an old programming textbook that I didn't finish. I always want to return to the later chapters.
