@@ -1,3 +1,9 @@
 # Resources
 
-I am starting a collection of articles and papers that I have found useful. 
+A collection of stuff that I found useful or interesting.
+
+## cheatsheets
+- 
+
+
+

@@ -1,9 +1,13 @@
-* Useful stuff about statistics
-** General
- - Textbook: /Computer Age Statistical Inference: algorithms, evidence, and data science/ by Efron & Hastie (2016) [[https://web.stanford.edu/~hastie/CASI_files/PDF/casi.pdf][(link)]]
-** Survival analysis
-  - Clark et al. (2003) Survival Analysis Part I: Basic concepts and first analyses. /British Journal of Cancer/ [[https://www.nature.com/articles/6601118][(link)]]
-  - Bradburn et al (2003) Survival Analysis Part II: Multivariate data analysis – an introduction to concepts and methods. /British Journal of Cancer/ [[https://www.nature.com/articles/6601119][(link)]]
-  - [[https://www.hammerlab.org/2017/06/26/introducing-survivalstan/][Introudcing SurvivalStan]]
-** Software
-  - [[https://mc-stan.org/users/documentation/tutorials][Tutorials for Stan]]
+## Useful statistics stuff
+
+###  General
+- Textbook: _Computer Age Statistical Inference: algorithms, evidence, and data science_ by Efron & Hastie (2016) [link](https://web.stanford.edu/~hastie/CASI_files/PDF/casi.pdf) 
+
+### Survival analysis
+- Clark et al. (2003) Survival Analysis Part I: Basic concepts and first analyses. _British Journal of Cancer_. [link](https://www.nature.com/articles/6601118) 
+  
+- Bradburn et al (2003) Survival Analysis Part II: Multivariate data analysis – an introduction to concepts and methods. _British Journal of Cancer_. [link](https://www.nature.com/articles/6601119)
+- [Introducing SurvivalStan](https://www.hammerlab.org/2017/06/26/introducing-survivalstan/)
+
+### Software
+- [Tutorial for Stan](https://mc-stan.org/users/documentation/tutorials)
