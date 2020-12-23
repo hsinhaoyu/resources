@@ -1,7 +1,5 @@
 root: ./
 
 structure:
-	readme: READ.me
+	readme: README.md
 
-redirects:
-	Math & stats: math.md
