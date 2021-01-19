@@ -15,6 +15,7 @@
 
 ### Bayesian
 - _Doing Bayesian Data analysis_ by John K. Kruschke is a very good tutorial on Bayesian data analysis.
+- [This](/https://www.flutterbys.com.au/stats/course.html) is a set of very useful tutorials on Bayesian analysis using R.
 
 ### Software
 - [Tutorial for Stan](https://mc-stan.org/users/documentation/tutorials)
