@@ -13,6 +13,9 @@
 - Bradburn et al (2003) Survival Analysis Part II: Multivariate data analysis – an introduction to concepts and methods. _British Journal of Cancer_. [link](https://www.nature.com/articles/6601119)
 - [Introducing SurvivalStan](https://www.hammerlab.org/2017/06/26/introducing-survivalstan/)
 
+### Causal inferencing
+- [Introduction of Causal Inference](https://jmlr.csail.mit.edu/papers/volume11/spirtes10a/spirtes10a.pdf)
+
 ### Bayesian
 - _Doing Bayesian Data analysis_ by John K. Kruschke is a very good tutorial on Bayesian data analysis.
 - [This](/https://www.flutterbys.com.au/stats/course.html) is a set of very useful tutorials on Bayesian analysis using R.
