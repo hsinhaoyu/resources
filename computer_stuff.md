@@ -15,6 +15,7 @@
 - [Emacs Mini Manual (PART 2) - LISP PRIMER](https://tuhdo.github.io/emacs-tutor2.html)
 - [Emacs Mini Manual (PART 3) - CUSTOMIZING AND EXTENDING EMACS](https://tuhdo.github.io/emacs-tutor3.html)
 - [Emacs LISP basics](http://ergoemacs.org/emacs/elisp_basics.html)
+- [Using dates and times in Emacs org-mode](http://members.optusnet.com.au/~charles57/GTD/org_dates)
 
 ### Hugo - static website generator
 - I needed a quick tutorial on the basic design of Hugo. This little book was exactly what I was looking for: _Build Websites with Hugo_ by Brian Hogan.
