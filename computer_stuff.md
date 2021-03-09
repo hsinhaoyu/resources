@@ -4,6 +4,7 @@
 
 ### git
 - [Git Katas](https://github.com/eficode-academy/git-katas) - a set of useful exercises for learning git
+- [Ry’s Git Tutorial](https://hamwaves.com/collaboration/doc/rypress.com/index.html)
 
 ### Emacs
 - An epic book-length [config script](https://github.com/alhassy/emacs.d) 
