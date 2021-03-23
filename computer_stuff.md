@@ -2,6 +2,10 @@
 ### zsh
 - Commands defined in the [osx plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/osx)
 
+### git
+- [Git Katas](https://github.com/eficode-academy/git-katas) - a set of useful exercises for learning git
+- [Ry’s Git Tutorial](https://hamwaves.com/collaboration/doc/rypress.com/index.html)
+
 ### Emacs
 - An epic book-length [config script](https://github.com/alhassy/emacs.d) 
 - [This](https://d12frosted.io/posts/2020-06-23-task-management-with-roam-vol1.html) is a good tutorial about how to use org-mode and org-roam effectively.
@@ -12,6 +16,7 @@
 - [Emacs Mini Manual (PART 2) - LISP PRIMER](https://tuhdo.github.io/emacs-tutor2.html)
 - [Emacs Mini Manual (PART 3) - CUSTOMIZING AND EXTENDING EMACS](https://tuhdo.github.io/emacs-tutor3.html)
 - [Emacs LISP basics](http://ergoemacs.org/emacs/elisp_basics.html)
+- [Using dates and times in Emacs org-mode](http://members.optusnet.com.au/~charles57/GTD/org_dates)
 
 ### Hugo - static website generator
 - I needed a quick tutorial on the basic design of Hugo. This little book was exactly what I was looking for: _Build Websites with Hugo_ by Brian Hogan.
