@@ -32,7 +32,7 @@ apple orange User24 banana User300 User5s cherry strawberry
 kiwi User65
 #+END_EXAMPLE
 
-To store this piece of text in a code block, I used the  =+BEGIN_EXAMPLE= and =+END_EXAMPLE= markup. I gave it up name (=source_text=) with =+NAME:=, so that other code blocks can refer to it. To learn more about the mechanism for passing information around code blocks, [[https://jherrlin.github.io/posts/emacs-orgmode-source-code-blocks/][jherrlin]] has posted several very useful blog entries. 
+To store this piece of text in a code block, I used the  =#+BEGIN_EXAMPLE= and =#+END_EXAMPLE= markup. I gave it up name (=source_text=) with =#+NAME:=, so that other code blocks can refer to it. To learn more about the mechanism for passing information around code blocks, [[https://jherrlin.github.io/posts/emacs-orgmode-source-code-blocks/][jherrlin]] has posted several very useful blog entries. 
 
 The following is a shell script block. I use the =:stdin source_text= directive to send the string to =STDIO=. To operate on =STDIO= from the shell script block, the easiest way is to read from the =/dev/stdin= file:
 
@@ -112,7 +112,7 @@ kiwi User65.gif banana User31.text
 
 Some of the substrings that begin with =User= are filenames (e.g., =User24.txt=). For those that are filenames, I want to extract the parts before the extensions (e.g., the =User24= part of =User24.txt=). Note that the length of the extension is not constant.
 
-With Python's =re.findall()=, this can easily be done by creating a group in the regular expression with parentheses:
+With Python's =re.findall()=, this can easily be done by creating a capture group in the regular expression with parentheses:
 #+begin_src python :results output :exports both :var str=source_text2
   import re
   res=re.findall(r'(User\d+).[a-z]{3,4}', str)
