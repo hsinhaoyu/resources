@@ -1,15 +1,15 @@
 #+TITLE: Simple exercises with grep, sed and awk in org-mode
 #+OPTIONS: toc:nil
 
-For text processing, I never bothered to learn classic Unix tools such as =sed= and =awk=, because everything is easier Python. The syntax of =sed= and =awk= just appeared to be too arcane to me. However, recently I realize that for many ad-hoc tasks, even writing a Python script is too much overhead. This motivated me to learn to use regular expressions directly in the command line.
+For text processing, I had never bothered to learn classic Unix tools such as [[https://en.wikipedia.org/wiki/Sed][sed]] and [[https://en.wikipedia.org/wiki/AWK][awk]], because I can always use Python's regular expression library. The syntax of =sed= and =awk= just appeared to be too arcane to me. However, recently I realize that for many simple ad-hoc tasks, even writing a Python script is too much overhead. This motivated me to learn to use regular expressions directly in the command line.
 
-This also gave me an excuse to play with literate programming in org-mode. I like mixing narratives with code in notebook environments, but with Jupyter and Mathematica notebooks, I have to program in either Python, R, or Mathematica. Org-mode is more flexible because it supports a large number of programming languages. Moreover, code blocks in different languages can be mixed in the same notebook, which makes it perfect for illustrating the behaviors of different languages. Another useful feature is that data can also be embedded in the same notebook, which eliminates the need to use multiple files.
+It also gave me an excuse to play with literate programming in org-mode. I love mixing narratives with code in notebook environments, but with Jupyter and Mathematica notebooks, I have to program in Python, R, or Mathematica. Org-mode has the advantage of supporting many programming languages. Furthermore, code blocks in an org-mode notebook can be written in more than one languages, which makes it perfect for teaching and learning programming languages. Another useful feature is that instead of loading data from an external file, a code block can read from data blocks (and even from the results of other code blocks) in the same notebook. It's very convenient to be able to manipulate data and code in a self-contained document.
 
-If you are reading this on GitHub, note that you are viewing GitHub's rendering of the notebook, which hides the markups used to construct the code blocks. You can click on the "Raw" button to view the source code.
+If you are reading this on GitHub, note that you are viewing GitHub's rendering of the notebook, which hides the markups used to construct the code blocks. You can click on the "Raw" button to view the source code. More usefully, you can download the [[https://github.com/hsinhaoyu/resources/blob/main/shell_regexp.org][source code]] and open it in Emacs. You can then move the cursor to one of the code blocks and evaluate it with =C-c C-c= to experiment with the code live.
 
 * Preparations
 
-By default, org-mode in Emacs only allows the evaluation of LISP code blocks. To work with the Unix shell and Python, I inserted the following to my Emacs configuration script:
+By default, org-mode in Emacs only allows the evaluation of LISP code blocks. For interacting with the Unix shell and Python, I inserted the following to my Emacs configuration script:
 
 #+begin_src emacs-lisp
   ;; Do not ask for confirmation when evaluation a block
@@ -24,7 +24,7 @@ By default, org-mode in Emacs only allows the evaluation of LISP code blocks. To
 
 * Running unix shell commands in org-mode
 
-Let's start with this string:
+Let's start with this small chunk of text:
 
 #+NAME: source_text
 #+BEGIN_EXAMPLE
@@ -32,9 +32,9 @@ apple orange User24 banana User300 User5s cherry strawberry
 kiwi User65
 #+END_EXAMPLE
 
-To store this piece of text in a code block, I used the  =#+BEGIN_EXAMPLE= and =#+END_EXAMPLE= markup. I gave it up name (=source_text=) with =#+NAME:=, so that other code blocks can refer to it. To learn more about the mechanism for passing information around code blocks, [[https://jherrlin.github.io/posts/emacs-orgmode-source-code-blocks/][jherrlin]] has posted several very useful blog entries. 
+To store it in a code block, I used the  =#+BEGIN_EXAMPLE= and =#+END_EXAMPLE= markup. I gave it a name (=source_text=) with =#+NAME:=, so that other code blocks can refer to it. To learn more about the mechanism for passing information around among code blocks, [[https://jherrlin.github.io/posts/emacs-orgmode-source-code-blocks/][jherrlin]] has posted several very useful blog entries. 
 
-The following is a shell script block. I use the =:stdin source_text= directive to send the string to =STDIO=. To operate on =STDIO= from the shell script block, the easiest way is to read from the =/dev/stdin= file:
+The following is a shell script block. I use the =:stdin source_text= directive to send the text to =STDIO=. To operate on =STDIO= from a shell script, the easiest way is to read from the =/dev/stdin= file:
 
 #+begin_src shell :stdin source_text :results output :exports both
 cat /dev/stdin
@@ -43,19 +43,24 @@ cat /dev/stdin
 #+RESULTS:
 : apple orange User24 banana User300 User5s cherry strawberry
 
-The result above shows that we can indeed read from the =source_text= block. Note that the format is controlled by the shell script block. I used =:results output= to tell org-mode to display the raw output of the shell script, instead of formatting the output as a table (which is the default setting). The =:exports both= directive was used so that when the org-mode document is exported to HTML, the script and the result are both exported.
+The result above shows that we can indeed read from the =source_text= block. Note that the format that the result is displayed in is specified by the shell script block. I used =:results output= to tell org-mode to display the raw output of the shell script, instead of formatting it as a table (which is the default behavior). The =:exports both= directive was used so that when the notebook is exported to HTML, the code and the result are both exported (by default, only the code is exported).
 
 * Simple pattern matching with =grep= 
 
-How to extract all the user IDs (=User24=, =User300=, =User5=) from the string? In Python, it's just:
+How to extract all the user IDs (=User24=, =User300=, =User5=, ==User65==) from the string? In Python, it's just:
 
 #+begin_src python :results output :exports both :var str=source_text
   import re
-  print(re.findall(r'User\d+', str))
+  res = re.findall(r'User\d+', str)
+  for r in res:
+    print(r)
 #+end_src
 
 #+RESULTS:
-: ['User24', 'User300', 'User5']
+: User24
+: User300
+: User5
+: User65
 
 To do the same in the Unix shell, =grep= is the closest to Python's =re.findall()=. It took me a couple of minutes to figure out that I had to use the extended version of =grep=, =egrep=, because the =+= pattern is unavailable in =grep=:
 
@@ -69,10 +74,11 @@ cat /dev/stdin | egrep -o 'User\d+'
 : User5
 : User65
 
-The =-o= option (=o= stands for "only") is important, because it tells =grep= and =egrep= to print only the substring that matches the regular expression. Interestingly, the matched substrings are displayed in individual lines. This behavior will come in handy later.
+The =-o= option (=o= stands for "only") is important, because it tells =(e)grep= to print only the substring that matches the regular expression pattern. Interestingly, the matched substrings are displayed in individual lines. This behavior will come in handy later.
 
 
-Without the =-o= flag, =(e)grep= merely reports that there is at least one match in the string by printing the entire string. This behavior is useful in many situations, but it doesn't help if we want to extract smaller pieces of useful information.
+Without the =-o= flag, =(e)grep= prints the entire line if there is a match in the line. This behavior is useful for identifying lines in a file that matches the pattern, but it's not useful for extracting useful pieces in a line.
+
 
 #+begin_src shell :stdin source_text :results output :exports both
 cat /dev/stdin | egrep 'User\d+'
@@ -80,8 +86,9 @@ cat /dev/stdin | egrep 'User\d+'
 
 #+RESULTS:
 : apple orange User24 banana User300 User5s cherry strawberry
+: kiwi User65
 
-=sed= doesn't seem to be suitable for this problem. It is good at editing words in a document, but it is not good at extraction.
+I also tried to solve this problem with =sed=, but it didn't seem to be work. =sed= is good at editing words in a document, but it is not good at extraction.
 
 * Simple pattern matching with =awk=
 This was the first time that I used =awk=. I was hoping for an elegant one-liner (what was I thinking?), but it turned out that for each line (=$0=), I had to loop through all matches, print out the match, and then update =$0= to become the rest of the line. Yuck! If I have to do this, I might as well use Python.
@@ -110,9 +117,9 @@ apple orange User24.txt banana User300s User5.text cherry strawberry
 kiwi User65.gif banana User31.text
 #+END_EXAMPLE
 
-Some of the substrings that begin with =User= are filenames (e.g., =User24.txt=). For those that are filenames, I want to extract the parts before the extensions (e.g., the =User24= part of =User24.txt=). Note that the length of the extension is not constant.
+Some of the substrings that begin with =User= are filenames (e.g., =User24.txt=). Form the filenames, I want to extract the parts before the extensions (e.g., the =User24= part of =User24.txt=). Note that the length of the extension is not constant.
 
-With Python's =re.findall()=, this can easily be done by creating a capture group in the regular expression with parentheses:
+With Python's =re.findall()=, this can easily be done by creating a capture group in the pattern with parentheses:
 #+begin_src python :results output :exports both :var str=source_text2
   import re
   res=re.findall(r'(User\d+).[a-z]{3,4}', str)
@@ -139,7 +146,7 @@ cat /dev/stdin | egrep -o 'User\d+.[a-z]{3,4}'
 : User65.gif
 : User31.text
 
-... but it is not easy to take them apart. That's where =sed= comes in! I couldn't solve this problem with =sed= alone, because =sed= is not good at picking up multiple matches in the same line. But since =grep= very helpfully puts each match in is own line, it's time to try the famous =sed= command =/s= ("substitute"):
+... but it is not easy to take them apart. That's where =sed= comes in! I couldn't solve this problem with =sed= alone, because =sed= is not good at picking up multiple matches in the same line. But since =grep= very helpfully puts each match in is own line, it's perfect for =sed=. It's time to try the famous =sed= command =s/= ("substitute"):
 
 #+begin_src shell :stdin source_text2 :results output :exports both
   sedre='(User[0-9]+).[a-z]{3,4}'
@@ -154,10 +161,10 @@ cat /dev/stdin | egrep -o 'User\d+.[a-z]{3,4}'
 : User31
 
 It's a nice one-liner, bit there are a some details to unpack:
-1. The syntax of the =sed= substitute command is =s/pattern/action/options=. I defined two variables (=sedre= and =action=) to make this structure more obvious, but it wasn't necessary.
+1. The syntax of the =s/= command is =s/pattern/action/options=. I defined two variables (=sedre= and =action=) to make this structure more obvious, but it wasn't necessary.
 2. I asked =sed= to print only the lines that matched. This isn't necessary because every line from =egrep= should match, but it's useful for debugging. This is done with the =-n= flag, and with the =p= ("print") option in last part of the =/s= command.
 3. I turned on the =-E= flag, to use extended regular expressions.
-4. I created a group in the regular expression =$sedre= with parentheses. Normally, the parentheses need to be escaped (i.e., =\(= and =\=)) for =sed=, but with the =-E= flag on, they cannot be escaped.
-5. In the =action= part of the =/s= command, I used =\1= to refer to the first (and only) group in the regular expression.
+4. I created a capture group in the pattern =sedre= with parentheses. Normally, the parentheses need to be escaped (i.e., =\(= and =\=)), but with the =-E= flag on, they shouldn't be escaped.
+5. In the =action= part of the =s/= command, I used =\1= to refer to the first (and only) group in the pattern.
 
-I was planning to solve this with =awk=, because =awk= is supposed to be good at extracting bits and pieces from texts. But =awk= is really most suitable for processing tabular data. For working with unstructured texts, =awk= is worse than Python, so I decided not to bother.
+I was planning to solve this with =awk=, because =awk= is supposed to be good at extracting bits and pieces of information from texts. But =awk= is really designed for processing tabular data. For unstructured texts, =awk= is worse than Python, so I decided not to bother.
