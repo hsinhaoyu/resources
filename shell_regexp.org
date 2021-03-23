@@ -5,7 +5,7 @@ For text processing, I had never bothered to learn classic Unix tools such as [[
 
 It also gave me an excuse to play with literate programming in org-mode. I love mixing narratives with code in notebook environments, but with Jupyter and Mathematica notebooks, I have to program in Python, R, or Mathematica. Org-mode has the advantage of supporting many programming languages. Furthermore, code blocks in an org-mode notebook can be written in more than one languages, which makes it perfect for teaching and learning programming languages. Another useful feature is that instead of loading data from an external file, a code block can read from data blocks (and even from the results of other code blocks) in the same notebook. It's very convenient to be able to manipulate data and code in a self-contained document.
 
-If you are reading this on GitHub, note that you are viewing GitHub's rendering of the notebook, which hides the markups used to construct the code blocks. You can click on the "Raw" button to view the source code. More usefully, you can download the [[https://github.com/hsinhaoyu/resources/blob/main/shell_regexp.org][source code]] and open it in Emacs. You can then move the cursor to one of the code blocks and evaluate it with =C-c C-c= to experiment with the code live.
+If you are reading this on GitHub or on my blog, note that you are viewing a rendering of the notebook, which hides the markups used to construct the code blocks. On GitHub, you can click on the "Raw" button to view the source code. More usefully, you can download the [[https://github.com/hsinhaoyu/resources/blob/main/shell_regexp.org][source code]] and open it in Emacs. You can then move the cursor to one of the code blocks, and evaluate it with =C-c C-c=.
 
 * Preparations
 
