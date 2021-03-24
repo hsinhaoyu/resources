@@ -2,19 +2,26 @@
 
 * splicing operator ,@
 The Emacs ,@ operator perform splicing. It's similar to the * operator in Python
-#+begin_src emacs-lisp :results value verbatim
+
+#+begin_src emacs-lisp :results output :exports both
   (setq b '(1 2 3))
-  `(a ,@b c)
+  (print `(a ,b c))
+  (print `(a ,@b c))
 #+end_src
 
 #+RESULTS:
+: 
+: (a (1 2 3) c)
+: 
 : (a 1 2 3 c)
 
-#+begin_src python :results value verbatim
+#+begin_src python :results output :exports both
   b = [1, 2, 3]
-  return ["a", *b, "c"]
+  print(["a",  b, "c"])
+  print(["a", *b, "c"])
 #+end_src
 
 #+RESULTS:
+: ['a', [1, 2, 3], 'c']
 : ['a', 1, 2, 3, 'c']
 
