@@ -2,6 +2,9 @@
 ### zsh
 - Commands defined in the [osx plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/osx)
 
+### shell scripting
+- [Bash Guide for Beginners](https://tldp.org/LDP/Bash-Beginners-Guide/html/index.html)
+
 ### git
 - [Git Katas](https://github.com/eficode-academy/git-katas) - a set of useful exercises for learning git
 - [Ry’s Git Tutorial](https://hamwaves.com/collaboration/doc/rypress.com/index.html)
