@@ -1,0 +1,20 @@
+#+TITLE: Emacs LISP notes
+
+* splicing operator ,@
+The Emacs ,@ operator perform splicing. It's similar to the * operator in Python
+#+begin_src emacs-lisp :results value verbatim
+  (setq b '(1 2 3))
+  `(a ,@b c)
+#+end_src
+
+#+RESULTS:
+: (a 1 2 3 c)
+
+#+begin_src python :results value verbatim
+  b = [1, 2, 3]
+  return ["a", *b, "c"]
+#+end_src
+
+#+RESULTS:
+: ['a', 1, 2, 3, 'c']
+
