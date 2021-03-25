@@ -4,6 +4,7 @@
 
 ### shell scripting
 - [Bash Guide for Beginners](https://tldp.org/LDP/Bash-Beginners-Guide/html/index.html)
+- [Bash scripting cheatsheet](https://devhints.io/bash)
 
 ### git
 - [Git Katas](https://github.com/eficode-academy/git-katas) - a set of useful exercises for learning git
