@@ -4,6 +4,7 @@
 ### Scheme/LISP programming
 - [On Lisp](https://sep.yimg.com/ty/cdn/paulgraham/onlisp.ps?t=1595850613&) by Paul Graham
 - [Scheme and the art of programming](https://www.cs.unm.edu/~williams/cs357/springer-friedman.pdf): This is an old programming textbook that I didn't finish. I always want to return to the later chapters.
+- [Practical Common Lisp](http://www.gigamonkeys.com/book/)
 
 ### Regular expression
 - [Regular expression buddy](http://www.regular-expressions.info/tutorial.html)
