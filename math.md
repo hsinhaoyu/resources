@@ -16,6 +16,7 @@
 ### Causal inferencing
 - [Introduction of Causal Inference](https://jmlr.csail.mit.edu/papers/volume11/spirtes10a/spirtes10a.pdf)
 - [Causal Inference: What If](https://cdn1.sph.harvard.edu/wp-content/uploads/sites/1268/2019/10/ci_hernanrobins_1oct19.pdf)
+- [Causal inference in statistics: An overview](https://ftp.cs.ucla.edu/pub/stat_ser/r350.pdf)
 
 ### Bayesian
 - _Doing Bayesian Data analysis_ by John K. Kruschke is a very good tutorial on Bayesian data analysis.
