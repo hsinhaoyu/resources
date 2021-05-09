@@ -1,6 +1,7 @@
 ## Math
 - A fantastic article about positive Grassmannian: [A Mathematician’s Unanticipated Journey Through the Physical World](https://www.quantamagazine.org/a-mathematicians-adventure-through-the-physical-world-20201216/?fbclid=IwAR1Pylp2l3j60IwwwCA0fnsmsY903NZX62DjECNTyav-_GBQkjGst8wKRHQ)
 - _Illustrating Mathematics_ is a collection of beautiful math illustrations. [link](https://dianadavis.github.io/im/book.pdf)
+- _The Knot Book: An elementary introduction to the mathematical theory of knots_ by Colin Adams. [link](http://people.math.harvard.edu/~ctm/home/text/books/adams/knot_book/knot_book.pdf)
 
 ## Useful statistics stuff
 
