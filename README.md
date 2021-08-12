@@ -6,6 +6,7 @@ A collection of links that I found useful or interesting:
 - [General science](science.md)
 - [Programming](programming.md)
 - [Practical info about using tools such as Emacs](computer_stuff.md)
+- [Data Science and Machine Learning](data_science.md)
 - [Other stuff](misc.md)
 
 # Notebooks
