@@ -11,6 +11,10 @@
  
 ### Scheme programming
 - [Scheme and the art of programming](https://www.cs.unm.edu/~williams/cs357/springer-friedman.pdf): This is an old programming textbook that I didn't finish. I always want to return to the later chapters.
+- [Scheme programming webook](https://en.wikibooks.org/wiki/Scheme_Programming)
+- [Teach Yourself Scheme in Fixnum Days](https://ds26gte.github.io/tyscheme/index-Z-H-1.html#TAG:__tex2page_toc)
+- [The Scheme Programming Language](https://www.scheme.com/tspl4/)
+- [An Introduction to Scheme and its Implementation](https://icem.folkwang-uni.de/~finnendahl/cm_kurse/doc/schintro/schintro_toc.html)
 
 ### Regular expression
 - [Regular expression buddy](http://www.regular-expressions.info/tutorial.html)
