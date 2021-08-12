@@ -25,3 +25,7 @@
 
 ### Hugo - static website generator
 - I needed a quick tutorial on the basic design of Hugo. This little book was exactly what I was looking for: _Build Websites with Hugo_ by Brian Hogan.
+
+### Unix
+- [Xah's Practical Linux tutorial](http://xahlee.info/linux/linux_index.html)
+- [The Linux Command Line book](https://linuxcommand.org/tlcl.php)
