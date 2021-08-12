@@ -7,7 +7,10 @@ A collection of links that I found useful or interesting:
 - [Programming](programming.md)
 - [Practical info about using tools such as Emacs](computer_stuff.md)
 - [Data Science and Machine Learning](data_science.md)
-- [Other stuff](misc.md)
+
+# Fun
+- [Recreational math, games and puzzles](recreational_math.md)
+- [Random things](misc.md)
 
 # Notebooks
 
