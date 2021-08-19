@@ -9,6 +9,7 @@
 ### git
 - [Git Katas](https://github.com/eficode-academy/git-katas) - a set of useful exercises for learning git
 - [Ry’s Git Tutorial](https://hamwaves.com/collaboration/doc/rypress.com/index.html)
+- [Repos for Ry's Git Tutorial](https://github.com/syn-bit/ry-s-git-tutorial)
 - [Gitflow workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
 
 ### Emacs
