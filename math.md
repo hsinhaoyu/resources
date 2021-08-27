@@ -29,3 +29,4 @@
 
 ### Misc
 - [Information theory and statitical mechanics](https://bayes.wustl.edu/etj/articles/theory.1.pdf): this is a classic paper by Jaynes in 1956.
+- [Probabolity theory: the logic of science](https://bayes.wustl.edu/etj/prob/book.pdf): Book by E.T. Jaynes.
