@@ -26,3 +26,6 @@
 
 ### Software
 - [Tutorial for Stan](https://mc-stan.org/users/documentation/tutorials)
+
+### Misc
+- [Information theory and statitical mechanics](https://bayes.wustl.edu/etj/articles/theory.1.pdf): this is a classic paper by Jaynes in 1956.
