@@ -3,6 +3,10 @@
 - _Illustrating Mathematics_ is a collection of beautiful math illustrations. [link](https://dianadavis.github.io/im/book.pdf)
 - _The Knot Book: An elementary introduction to the mathematical theory of knots_ by Colin Adams. [link](http://people.math.harvard.edu/~ctm/home/text/books/adams/knot_book/knot_book.pdf)
 
+## Physics
+- [Structure and Interpretation of Classical Mechanics](https://library.oapen.org/handle/20.500.12657/26048) - Textbook by Gerald Sussman. Use Scheme to teach classical mechanics 
+- [Functional Differential Geometry](https://mitpress.mit.edu/books/functional-differential-geometry) - Textbook by Gerald Sussman. Used Scheme to teach differential geometry and relativity.
+
 ## Useful statistics stuff
 
 ###  General
