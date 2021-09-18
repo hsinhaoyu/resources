@@ -10,6 +10,7 @@
 - Lisp for the Web by Adam Tornhill
  
 ### Scheme programming
+- [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-4.html#%_toc_start) - the classic SICP.
 - [Scheme and the art of programming](https://www.cs.unm.edu/~williams/cs357/springer-friedman.pdf): This is an old programming textbook that I didn't finish. I always want to return to the later chapters.
 - [Scheme programming webook](https://en.wikibooks.org/wiki/Scheme_Programming)
 - [Teach Yourself Scheme in Fixnum Days](https://ds26gte.github.io/tyscheme/index-Z-H-1.html#TAG:__tex2page_toc)
