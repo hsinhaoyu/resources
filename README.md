@@ -2,7 +2,7 @@
 
 A collection of links that I found useful or interesting:
 
-- [Math and statistics](math.md)
+- [Math, physics statistics](math.md)
 - [General science](science.md)
 - [Programming](programming.md)
 - [Practical info about using tools such as Emacs](computer_stuff.md)
