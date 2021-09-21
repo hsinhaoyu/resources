@@ -1,3 +1,6 @@
+### Python programming
+- [The Hitchhiker’s Guide to Python!](https://docs.python-guide.org)
+
 ### Numerical methods 
 - [Array programming with NumPy](https://www.nature.com/articles/s41586-020-2649-2): Published in Nature! A good overview of Numpy.
 
