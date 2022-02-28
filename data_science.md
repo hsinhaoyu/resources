@@ -7,5 +7,8 @@
 - [A Survey of Predictive Modelling under Imbalanced Distributions](https://arxiv.org/abs/1505.01658)
 - [A new evaluation measure for inbalanced datasets](https://crpit.scem.westernsydney.edu.au/confpapers/CRPITV87Weng.pdf)
 
+## Causality
+- [Applied Causal Analysis (with R)](https://bookdown.org/paul/applied-causal-analysis/) 
+
 ## Blogs about data
 - [Data Colada](https://datacolada.org)
