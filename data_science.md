@@ -10,5 +10,8 @@
 ## Causality
 - [Applied Causal Analysis (with R)](https://bookdown.org/paul/applied-causal-analysis/) 
 
+## Forecasting
+- [orecasting: Principles and Practice](https://otexts.com/fpp3/)
+
 ## Blogs about data
 - [Data Colada](https://datacolada.org)
