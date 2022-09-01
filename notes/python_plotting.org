@@ -1,0 +1,71 @@
+
+* matplotlib example: single panel (stateful)
+
+#+begin_src python
+  import matplotlib.pyplot as plt
+  import numpy as np
+
+  x = np.linspace(0, 10, 100)
+
+  plt.plot(x, np.sin(x))
+  plt.title('sin')
+  plt.xlabel('x')
+  plt.ylabel('y')
+#+end_src
+
+* matplotlib example: multiple panels (stateful)
+
+#+begin_src python
+  import matplotlib.pyplot as plt
+  import numpy as np
+
+
+  x = np.linspace(0, 10, 100)
+
+  plt.figure() # this is optional
+
+  plt.subplot(2, 1, 1)
+  plt.plot(x, np.sin(x))
+
+  plt.subplot(2, 1, 2)
+  plt.plot(x, np.cos(x))
+#+end_src
+
+* matplotlib example: single panel (object-oriented)
+
+#+begin_src python
+  import matplotlib.pyplot as plt
+  import numpy as np
+
+  x = np.linspace(0, 10, 100)
+
+  fig = plt.figure()
+  ax = plt.axes()
+
+  ax.plot(x, np.sin(x))
+  ax.set(xlabel = 'x',
+         ylabel = 'y',
+         title = 'sin')
+#+end_src
+
+* matplotlib example: multiple panels (object-oriented)
+
+#+begin_src python
+  import matplotlib.pyplot as plt
+  import numpy as np
+
+  x = np.linspace(0, 10, 100)
+
+  fig, ax = plt.subplots(2)
+
+  ax[0].plot(x, np.sin(x))
+  ax[0].set(xlabel = 'x',
+            ylabel = 'y',
+            title = 'sin')
+
+  ax[1].plot(x, np.cos(x))
+  ax[1].set(xlabel = 'x',
+            ylabel = 'y',
+            title = 'cos')
+#+end_src
+

@@ -16,4 +16,4 @@ A collection of links that I found useful or interesting:
 
 Some programming notebooks for my own reference:
 
-- [Simple exercises with grep, sed and awk in org-mod](shell_regexp.org) - play around with unix tools in org-mode.
+- [Simple exercises with grep, sed and awk in org-mod](notes/shell_regexp.org) - play around with unix tools in org-mode.
