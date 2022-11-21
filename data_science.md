@@ -14,5 +14,8 @@
 ## Forecasting
 - [Forecasting: Principles and Practice](https://otexts.com/fpp3/)
 
+## R
+- [Introduction to Statistics and Data Science](https://faculty.nps.edu/rbassett/_book/)
+
 ## Blogs about data
 - [Data Colada](https://datacolada.org)
