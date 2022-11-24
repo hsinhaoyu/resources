@@ -1,10 +1,11 @@
 ## Various computer stuff
-### zsh
-- Commands defined in the [osx plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/osx)
 
-### shell scripting
+### Unix
+- [Xah's Practical Linux tutorial](http://xahlee.info/linux/linux_index.html)
+- [The Linux Command Line book](https://linuxcommand.org/tlcl.php)
 - [Bash Guide for Beginners](https://tldp.org/LDP/Bash-Beginners-Guide/html/index.html)
 - [Bash scripting cheatsheet](https://devhints.io/bash)
+- [The Art of Command Line](https://github.com/jlevy/the-art-of-command-line)
 
 ### git
 - [Git Katas](https://github.com/eficode-academy/git-katas) - a set of useful exercises for learning git
@@ -27,7 +28,3 @@
 
 ### Hugo - static website generator
 - I needed a quick tutorial on the basic design of Hugo. This little book was exactly what I was looking for: _Build Websites with Hugo_ by Brian Hogan.
-
-### Unix
-- [Xah's Practical Linux tutorial](http://xahlee.info/linux/linux_index.html)
-- [The Linux Command Line book](https://linuxcommand.org/tlcl.php)
