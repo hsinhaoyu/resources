@@ -7,6 +7,9 @@
 - [Structure and Interpretation of Classical Mechanics](https://library.oapen.org/handle/20.500.12657/26048) - Textbook by Gerald Sussman. Use Scheme to teach classical mechanics 
 - [Functional Differential Geometry](https://mitpress.mit.edu/books/functional-differential-geometry) - Textbook by Gerald Sussman. Used Scheme to teach differential geometry and relativity.
 
+## Quantum Computation
+- [Learn Quantum Computation using Qiskit](https://qiskit.org/textbook/preface.html)
+
 ## Useful statistics stuff
 
 ###  General
