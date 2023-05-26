@@ -11,6 +11,7 @@ A collection of links that I found useful or interesting:
 # Fun
 - [Recreational math, games and puzzles](recreational_math.md)
 - [Random things](misc.md)
+- [Music](music.md)
 
 # Notebooks
 
