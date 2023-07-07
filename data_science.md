@@ -17,6 +17,7 @@
 ## R
 - [Introduction to Statistics and Data Science](https://faculty.nps.edu/rbassett/_book/)
 - [Analysing Data using Linear Models](https://bookdown.org/pingapang9/linear_models_bookdown/)
+- [The R Inferno](https://www.burns-stat.com/pages/Tutor/R_inferno.pdf)
 
 ## Blogs about data
 - [Data Colada](https://datacolada.org)
