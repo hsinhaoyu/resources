@@ -1,0 +1,264 @@
+#+TITLE: Emacs notes
+#+STARTUP: overview
+
+* Resources
+Use C-c C-o to open links
+- [[https://tuhdo.github.io/emacs-tutor.html][Emacs Mini Manual (PART 1) - THE BASICS]]
+- [[https://tuhdo.github.io/emacs-tutor3.html][Emacs Mini Manual (PART 3) - CUSTOMIZING AND EXTENDING EMACS]]
+- [[https://medium.com/@suvratapte/configuring-emacs-from-scratch-packages-220bbc5e55b7][Configure Emacs from scratch]]
+- [[http://cachestocaches.com/series/emacs-productivity/)][Emacs for Productivity]]
+- [[https://blog.aaronbieber.com/2015/07/05/a-gentle-introduction-to-emacs-configuration.html][A gentle introduction to Emacs configuration]]
+
+* Movement
+| keys        | function                                                |
+|-------------+---------------------------------------------------------|
+| M-m         | Jump to first non-whitespace character in line in emacs |
+| C-u C-space | jump to previous location                               |
+
+** How to set a location to jump to?
+C-SPC C-SPC    This set the mark and deactivate it
+C-u C-SPC      jump
+
+Another useful jump is:
+
+C-x C-SPC      This pops the global mark ring
+
+* Structural editing
+| key   | function                            |
+|-------+-------------------------------------|
+| C-M-f | move forward s-expression           |
+| C-M-b | move backward s-expression          |
+| C-M-d | move down into a list               |
+| C-M-u | move up out of a list               |
+| C-M-n | move forward to the next list       |
+| C-M-p | move backward to previous list      |
+| M-}   | move forward to end of paragraph    |
+| M-{   | move backward to start of paragraph |
+| C-M-a | move to beginning of defun          |
+| C-M-e | move to end of defun                |
+* python mode
+| key     | function                  |
+|---------+---------------------------|
+| C-c >   | python-indent-shift-right |
+| C-c <   | python-indent-shift-left  |
+| C-x TAB | rigid indents             |
+* bookmarks
+| keys    | function         |
+|---------+------------------|
+| C-x r m | set bookmark     |
+| C-x r l | list bookmakrs   |
+| C-x r b | jump to bookmark |
+* iTerms2 setting
+- Under Session/Keys, set Left Option Key to ESC
+
+* delete
+| keys | function    |
+|------+-------------|
+| M-d  | kill a word |
+
+* magit 
+- after entering commit message, C-c C-c
+
+* ibuffer notes
+- use /m to add filter by a major mode, after that, use /g to give it a name
+
+* markdown 
+- [more info](https://leanpub.com/markdown-mode/)
+- C-c C-c o: preview
+
+* Deft notes
+- [more info](https://jblevins.org/projects/deft/)
+
+| key     | function                      |
+|---------+-------------------------------|
+| C-c C-q | quit                          |
+| C-c C-n | create new file               |
+| C-c C-m | create new file with filename |
+| C-c C-g | refresh                       |
+| C-c C-d | delete file                   |
+| C-c C-r | rename file                   |
+
+* ORG 
+** Tutorials and resources
+
+| keys          | function        |
+|---------------+-----------------|
+| C-c C-o       | open the link   |
+| [[link][text] | syntax for link |
+
+- [[https://orgmode.org/worg/org-tutorials/org4beginners.html][A basic tutorial]]
+- [[https://www.linuxjournal.com/article/9116][Linux Journal tutorial]]
+- [[https://orgmode.org/worg/org-tutorials/][A collection of resorces]]
+- [[https://blog.aaronbieber.com/2016/09/24/an-agenda-for-life-with-org-mode.html][A very useful tutorial about customizing Agenda]]
+- [[https://blog.aaronbieber.com/2016/01/30/dig-into-org-mode.html][Dig into ORG mode]]
+  
+** Outline
+
+| key     | function            |
+|---------+---------------------|
+| M-left  | promote             |
+| M-right | demote              |
+| M-RET   | next item           |
+| TAB     | collapse one branch |
+| S-TAB   | collapse entire do  |
+| C-x n s | narrow to sub tree  |
+| C-x n w | widen               |
+
+** Styles
+You can make words *bold*, /italic/, _underlined_, =code= and ~verbatim~, and, if you must, +strike-through+.
+
+** To-do
+Use S-left/right to cycle through work flow
+Use C-c C-x C-A to archive to the end of the file
+
+** Tags
+
+| key     | function      |
+|---------+---------------|
+| C-c C-c | insert a tag  |
+| C-c \   | search by tag |
+
+** Table
+
+| key     | function                  |
+|---------+---------------------------|
+| Tab     | move to the next cell     |
+| S-Table | move to the previous cell |
+
+** Agenda
+- [[https://blog.aaronbieber.com/2016/09/25/agenda-interactions-primer.html][useful tutorial]]
+
+| key | function             |
+|-----+----------------------|
+| v d | day view             |
+| v w | week view            |
+| v m | month view           |
+| f   | forward              |
+| b   | backward             |
+| .   | go to today          |
+| D   | toggle diary display |
+| i   | insert dairy entry   |
+| t   | toggle TODO state    |
+
+** Calendar
+
+
+[[https://www.gnu.org/software/emacs/manual/html_node/emacs/Adding-to-Diary.html#Adding-to-Diary][Document]]
+
+| key | function                    |
+|-----+-----------------------------|
+| i d | add diary entry for the day |
+
+** Links
+| keys    | function        |
+|---------+-----------------|
+| C-c l   | org-store-link  |
+| C-c C-l | org-insert-link |
+** Code block
+| key   | function        |
+|-------+-----------------|
+| C-c ' | edit code block |
+
+* ORG Roam
+| key     | function               |
+|---------+------------------------|
+| C-c r f | org-roam-node-find     |
+| C-c r i | org-roam-node-insert   |
+| C-c r a | org-roam-alias-add     |
+| C-c r l | org-roam-buffer-toggle |
+
+links:
+#+begin_src
+[[roam:title]]           links to org-roam file with title
+[[roam:*headline]]       links to a headline in the current org-roam file
+[[roamm:title*headline]] links to title and headline
+#+end_src
+
+header:
+#+begin_src
+#+title: 
+#+roam_aliases: "bla"
+#+FILETAGS:  XXX
+- tags ::    XXX
+#+end_src
+
+** How to
+*** How to start a new org roam document? =org-roam-node-find= or =consult-org-roam-file-find=
+*** How to search org roam documents? =consult-org-roam-file-find=
+
+* Journal
+| keys        | function           |
+|-------------+--------------------|
+| C-c C-j     | org-journal-new-entry |
+| C-u C-c C-j | view journal entry |
+
+in calendar view
+| key | function                               |
+|-----+----------------------------------------|
+| j r | view an entry in a new buffer          |
+| j d | view an entry but do not switch to it. |
+
+* Programming: LSP
+| key     | function                        |
+|---------+---------------------------------|
+| C-l g r | lsp-find-references (g=goto)    |
+| C-l g g | lsp-find-definition (g=goto)    |
+| C-l r r | ls-rename (r=refactor)          |
+|         | flymake-show-diagnostics-buffer |
+| C-l = = | lsp-format-buffer               |
+|         | lsp-format-region               |
+
+* Programming
+| keys                     | function                            |
+|--------------------------+-------------------------------------|
+| M-x ffap                 | find file at point                  |
+| M-;                      | write a comment, or comment a block |
+| C-M-f                    | move forward S-exp                  |
+| C-M-b                    | move backward S-exp                 |
+| C-M-d                    | move down into a list               |
+| C-M-u                    | move up into a list                 |
+| C-M-n                    | move forward to next list           |
+| C-M-p                    | move to previous list               |
+| C-M-k                    | kill s-exp                          |
+| python-indent-shift-left | unindent                            |
+| python-indent-sift-right | indent                              |
+| C-M-a                    | move to the beginning of a function |
+
+* how to
+- get the filename associated with a buffer? C-h v and then enter the variable name buffer-file-name
+  
+* Client/server mode
+[[https://www.emacswiki.org/emacs/EmacsAsDaemon][This document]] explains how to start emacs as a daemon on macOS. Seems to be too complicated.
+
+To start the emacs server, run =server-start=.
+
+I added the following in .zshrc to call the emacs client
+
+#+begin_src sh :tangle no
+alias Emacs="/Applications/Emacs.app/Contents/MacOS/Emacs"
+alias emacs="/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -c"
+export VISUAL="/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -c"
+export EDITOR="/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -c"
+#+end_src
+
+* snippets
+** wrap around
+This is an example of a snippet that wraps around selected region. activate the snippet from menu.
+#+begin_src emacs-lisp
+# -*- mode: snippet -*-
+# name: code block for hugo
+# key: <hugo-codeblock
+# expand-env: ((yas-wrap-around-region nil))
+# --
+{{< highlight lisp "style=monokailight" >}}
+`yas-selected-text`
+{{< / highlight >}}
+#+end_src
+* Lisp
+- [[https://blog.aaronbieber.com/2016/08/07/getting-started-with-emacs-lisp.html][Getting started with Emacs LISP]]
+  
+* Packages
+use "package-refresh-content" to update the latest info of the packages.
+use "package-list-packages" to list all. The install.
+
+"package-refresh-content" doesn't work on my Chrombook. As work around, run "package-list-packages", then use the pull down menu to select "refresh".

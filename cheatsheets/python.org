@@ -1,0 +1,35 @@
+* Regular expression
+#+start_src python
+import re
+file = 'HSI-01-DEC-2018/HSI010/HSI_010_R_LE_Central_180112_2.h5'
+regexp_pattern = "(?P<dir>HSI-[0-9]{2}-[A-Z]{3}-[0-9]{4}/HSI[0-9]{3})/(?P<file>HSI_.*)"
+
+zz= re.search(regexp_pattern, file)
+print(zz.group('dir'))
+print(zz.group('file'))
+#+end_src
+
+* argument parser
+
+#+start_src python
+import argparse
+parser = argparse.ArgumentParser(description="bla bla",
+                                 formatter_class = argparse.RawDescriptionHelpFormatter,
+                                 epilog="bla bla")
+parser.add_argument('source', nargs="+", help="bla bla")
+parser.add_argument("-r", "--root_dir")
+args = parser.parse_args()
+
+print(args.root_dir)
+print(args.source)
+#+end_src
+
+
+
+
+* CSV
+import csv
+with open(root_dir + new_dir + 'train/training_set.csv', 'w') as training_set_file:
+    csv_writer = csv.writer(training_set_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+    for row in table:
+        csv_writer.writerow(row)

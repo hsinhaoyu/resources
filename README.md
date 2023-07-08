@@ -13,6 +13,9 @@ A collection of links that I found useful or interesting:
 - [Random things](misc.md)
 - [Music](music.md)
 
+# Cheatsheets 
+- [See this directory](cheatsheets/)
+
 # Notebooks
 
 Some programming notebooks for my own reference:

@@ -1,0 +1,7 @@
+* Basics
+** list all environments
+conda info --envs
+** activate
+conda acivate XXX
+** create a new environment
+conda create --name nndev python=3

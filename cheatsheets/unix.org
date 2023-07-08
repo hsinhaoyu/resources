@@ -1,0 +1,21 @@
+* tasks
+** the size of a directory:
+du -sh <dir name>
+-s: don't list size of subdirectories
+-h: report size in human readable format
+* zsh osx plugin
+| key        | function                            |
+|------------+-------------------------------------|
+| tab        | open current directory in a new tab |
+| split_tab  | split terminal horizontally         |
+| vsplit_tab | split terminal vertically           |
+| pfd        | return path of frontmost window     |
+| pfs        | return finder selection             |
+| cdf        | cd to the current finder directory  |
+* tmux
+| keys               | function              |
+|--------------------+-----------------------|
+| tmux new           | new session           |
+| tmux new -s <name> | new session with name |
+| tmux ls            | list sessions         |
+| tmux attach <name> | attach to session     |

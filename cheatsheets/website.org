@@ -1,0 +1,23 @@
+Notes about my website
+
+* website
+
+aws-shell
+s3 sync ./public s3://hhyu.org
+aws cloudfront create-invalidation --distribution-id E38WVZ7P03183F --paths /*
+
+* new blog post
+
+cd /Users/hhyu/Library/Mobile\ Documents/com~apple~CloudDocs/sites/Hugo-site
+
+- hugo new posts/bla.md
+- hugo new micro/bla.md
+
+hugo server
+
+git add -A
+git commit -m ""
+git push -u origin2 master
+
+
+

@@ -1,0 +1,24 @@
+* Commandline action:
+** new blog post
+#+begin_src sh
+cd $hugo
+hugo new posts/bla.md 
+hugo new micro/bla.md
+hugo server 
+#+end_src
+** update with git
+#+begin_src sh
+git add -A 
+git commit -m “” 
+git push -u origin2 master 
+#+end_src
+* Links:
+[[http://hhyu.org.s3-website-ap-southeast-2.amazonaws.com][end point to my bucket]]
+* Resources
+- [[https://www.mikedane.com/static-site-generators/hugo/][good lesson]]
+* upgrade
+** current version
+- brew info hugo
+- hugo version
+** update
+- brew upgrade hugo

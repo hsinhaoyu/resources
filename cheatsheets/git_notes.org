@@ -1,0 +1,70 @@
+* Git cheatsheet
+** commits
+
+*** AMEND the previous commit, change the commit message
+
+If committed prematurely
+
+#+begin_src sh
+git commit --amend -m "bla bla"
+#+end_src
+
+*** Undo committed changes
+After making some changes and having committed those changes, we want to undo the committed changes.
+
+#+begin_src sh
+git revert <commit>
+#+end_src
+
+*** Undo uncommitted changes
+
+Reset all files to the previous commit
+#+begin_src sh
+git reset --hard
+#+end_src
+
+*** condense a series of commits into one single commit using soft reset
+
+Use soft reset to set MASTER to a previous commit state, then commit again. Everything in between is a single commit
+
+#+begin_src sh
+git reset --soft <commit>
+#+end_src
+
+*** forgot to start a new branch, and committed changes to the master branch.
+
+To retrospectively start a new branch:
+- create the branch
+- reset --soft master origin/master
+
+** branching
+*** checkout a remote branch
+
+[[https://careerkarma.com/blog/git-fetch/][ref1]]
+[[https://www.atlassian.com/git/tutorials/syncing/git-fetch#:~:text=To%20view%20your%20remote%20branches,with%20a%20normal%20git%20merge%20.][ref2]]
+
+Somebody created a new branch on github. I don't have this branch.
+
+First, use "git fetch origin". This will download all branches to the local repo, but they are not merged into the main branch yet. They are still considered "remote branches". They can be seen with
+
+git branch -r
+
+checkout one of them with
+
+git checkout origin/new_branch
+
+
+and then follow the suggestion
+
+git checkout -b new_branch
+
+This will make origin/new_branch a local branch
+
+With Magit, the last step can be down with branch/spinoff (I think)
+
+*** the remote master branch is ahead of my local copy. I want to take a look, but I don't want it to merge with my version immediately (i.e., I dont want to pull)
+
+First, "git fetch origin" to download all remote branches to the local repo.
+Then, "git checkout origin/master". This is the latest master branch.
+
+If it looks ok, checkout master branch, and merge origin/master to it
