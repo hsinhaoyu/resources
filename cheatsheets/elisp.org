@@ -1,0 +1,10 @@
+* Cheatsheet: Emacs LISP
+
+** A regular expression example:
+#+begin_src emacs-lisp
+  ;;; \\( and \\) define the capture group
+  (let ((str "[[file:build/test.png]]"))
+    (when (string-match "\\[\\[file:\\(.*\\)\\]\\]" str)
+      (match-string 1 str)))
+#+end_src
+

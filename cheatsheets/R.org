@@ -1,0 +1,3 @@
+* Cheatsheet: R
+** bracket and double bracket
+When used on a list, bracket returns a list. Double bracket returns the element

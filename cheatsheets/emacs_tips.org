@@ -1,0 +1,5 @@
+* Org-roam workflow
+- find files, new files: =C-c n e= (or =consult-org-roam-file-find=)
+- backlinks: =C-c n b= (or =consult-org-roam-backlinks=)
+- search: =C-c n r= (or =consult-org-roam-search=)
+- new daily: =org-roam-dailies-capture-today=
