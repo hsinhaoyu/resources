@@ -8,5 +8,8 @@
 ### Blues
 - [Blues harmony primer](https://www.ethanhein.com/wp/2022/blues-harmony-primer)
 
+### Jazz
+- [Leonard Bernstein - What Is Jazz](https://www.youtube.com/watch?v=E67GEok6Uj0)
+
 ### The Beatles
 - [Analyses of Beatles' songs](https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/awp-notes_on.shtml)
