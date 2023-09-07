@@ -20,6 +20,7 @@
 - [Teach Yourself Scheme in Fixnum Days](https://ds26gte.github.io/tyscheme/index-Z-H-1.html#TAG:__tex2page_toc)
 - [The Scheme Programming Language](https://www.scheme.com/tspl4/)
 - [An Introduction to Scheme and its Implementation](https://icem.folkwang-uni.de/~finnendahl/cm_kurse/doc/schintro/schintro_toc.html)
+- [Shido's Yet Another Scheme Tutorial](https://www.shido.info/lisp/idx_scm_e.html)
 
 ### Regular expression
 - [Regular expression buddy](http://www.regular-expressions.info/tutorial.html)
