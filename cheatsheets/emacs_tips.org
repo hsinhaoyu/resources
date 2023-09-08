@@ -3,3 +3,35 @@
 - backlinks: =C-c n b= (or =consult-org-roam-backlinks=)
 - search: =C-c n r= (or =consult-org-roam-search=)
 - new daily: =org-roam-dailies-capture-today=
+
+* Writing
+- =ispell-word= suggests correct spelling
+
+* Movements: s-expressions and strings
+| key   | function                                      |
+|-------+-----------------------------------------------|
+| C-M-f | move forward by s-exp (=forward-sexp=)        |
+| C-M-b | move backward by s-exp                        |
+| C-M-d | move down into a list                         |
+| C-M-u | move down into a list                         |
+| C-M-n | move forward to the next list (=forward-list=) |
+| C-M-p | move backward to the previous list            |
+|       |                                               |
+
+
+- When the point is inside a s-expression or a string, to go to the beginning of the s-expression, use =C-M-u= (go "up" an expression)
+- When the point is inside a s-expression or a string, to go to the end of the s-expression, use =C-M-u= and then =C-M-f= (go "forward")
+- To kill a s-expression or string, =C-M-u= and then =C-M-k= (=kill-sexp=).
+
+* Deleting
+- Delete the word that the point is in: M-b then M-d (i.e., first move to the beginning of a word, and then delete it)
+
+* Coding: spell check existing code
+=M-x ispell-comments-and-strings=
+
+*  Coding: movement
+| key   | function                            |
+|-------+-------------------------------------|
+| C-M-a | move to the beginning of a function |
+| C-M-e | move to the end of  a function      |
+  
