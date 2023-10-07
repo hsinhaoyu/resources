@@ -22,5 +22,8 @@
 - [An Introduction to Scheme and its Implementation](https://icem.folkwang-uni.de/~finnendahl/cm_kurse/doc/schintro/schintro_toc.html)
 - [Shido's Yet Another Scheme Tutorial](https://www.shido.info/lisp/idx_scm_e.html)
 
+### Haskell
+- [Learn You a Haskell for Great Good!](http://learnyouahaskell.com/chapters)
+
 ### Regular expression
 - [Regular expression buddy](http://www.regular-expressions.info/tutorial.html)
