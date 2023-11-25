@@ -22,6 +22,7 @@
 - [An Introduction to Scheme and its Implementation](https://icem.folkwang-uni.de/~finnendahl/cm_kurse/doc/schintro/schintro_toc.html)
 - [Shido's Yet Another Scheme Tutorial](https://www.shido.info/lisp/idx_scm_e.html)
 - [10 ways GNU Guile is 10x better](https://www.draketo.de/software/guile-10x.html)
+- [Learn Scheme in 15 minutes](https://artanis.dev/scheme.html)
 
 ### Haskell
 - [Learn You a Haskell for Great Good!](http://learnyouahaskell.com/chapters)
