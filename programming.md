@@ -24,6 +24,7 @@
 - [10 ways GNU Guile is 10x better](https://www.draketo.de/software/guile-10x.html)
 - [Learn Scheme in 15 minutes](https://artanis.dev/scheme.html)
 - [A Scheme Primer](https://spritely.institute/static/papers/scheme-primer.html)
+- [An example of delimited continuations](https://wingolog.org/archives/2011/08/30/the-gnu-extension-language)
 
 ### Haskell
 - [Learn You a Haskell for Great Good!](http://learnyouahaskell.com/chapters)
