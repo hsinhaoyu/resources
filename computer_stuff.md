@@ -25,6 +25,7 @@
 - [Emacs LISP basics](http://ergoemacs.org/emacs/elisp_basics.html)
 - [Using dates and times in Emacs org-mode](http://members.optusnet.com.au/~charles57/GTD/org_dates)
 - [Emacs LISP](https://caiorss.github.io/Emacs-Elisp-Programming/Elisp_Programming.html#sec-1)
+- [eLisp guide](https://github.com/chrisdone-archive/elisp-guide?tab=readme-ov-file)
 
 ### Hugo - static website generator
 - I needed a quick tutorial on the basic design of Hugo. This little book was exactly what I was looking for: _Build Websites with Hugo_ by Brian Hogan.
