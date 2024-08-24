@@ -1,8 +1,9 @@
 * Org-roam workflow
-- find files, new files: =C-c n e= (or =consult-org-roam-file-find=)
-- backlinks: =C-c n b= (or =consult-org-roam-backlinks=)
-- search: =C-c n r= (or =consult-org-roam-search=)
-- new daily: =org-roam-dailies-capture-today=
+- find files, new files (c-C r f): =C-c n e= (or =consult-org-roam-file-find=)
+- backlinks: =C-c r l= (or =consult-org-roam-backlinks=), or =org-roam-buffer-toggle=
+- search: =C-c r s= (or =consult-org-roam-search=)
+- new daily: (=C-c r j=) =org-roam-dailies-capture-today=
+- update database: =org-roam-db-sync=  
 
 * Writing
 - =ispell-word= suggests correct spelling
@@ -18,10 +19,12 @@
 | C-M-p | move backward to the previous list            |
 |       |                                               |
 
-
 - When the point is inside a s-expression or a string, to go to the beginning of the s-expression, use =C-M-u= (go "up" an expression)
 - When the point is inside a s-expression or a string, to go to the end of the s-expression, use =C-M-u= and then =C-M-f= (go "forward")
 - To kill a s-expression or string, =C-M-u= and then =C-M-k= (=kill-sexp=).
+
+* Window management
+=M-x window-swap-states= swaps the content of two windows.
 
 * Deleting
 - Delete the word that the point is in: M-b then M-d (i.e., first move to the beginning of a word, and then delete it)
@@ -35,3 +38,14 @@
 | C-M-a | move to the beginning of a function |
 | C-M-e | move to the end of  a function      |
   
+
+* Scheme
+reference: https://github.com/emacsmirror/geiser
+Start Guile interpreter: =M-x geiser=
+From a file, send a s-expression to Guile: =C-x C-e=
+Expand macro: =C-c C-m=
+
+* packages
+Use =list-packages= to enter the package manager
+hit =U= to mark all packages that need upgrades
+to see them, filter marked

@@ -42,6 +42,9 @@ C-x C-SPC      This pops the global mark ring
 | C-c >   | python-indent-shift-right |
 | C-c <   | python-indent-shift-left  |
 | C-x TAB | rigid indents             |
+
+- to start a python shell, run =run-python=
+- To send code to python sell run =python-shell-send-buffer=
 * bookmarks
 | keys    | function         |
 |---------+------------------|
