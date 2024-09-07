@@ -12,6 +12,7 @@
 - [Paradigms of Artificial Intelligence Programming](https://github.com/norvig/paip-lisp)
 - [Land of LISP by Conrad Barkski](http://landoflisp.com)
 - Lisp for the Web by Adam Tornhill
+- [Successful LISP](https://dept-info.labri.fr/~strandh/Teaching/PFS/Common/David-Lamkins/contents.html)
  
 ### Scheme programming
 - [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-4.html#%_toc_start) - the classic SICP.
