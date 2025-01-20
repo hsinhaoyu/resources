@@ -3,7 +3,8 @@
 - backlinks: =C-c r l= (or =consult-org-roam-backlinks=), or =org-roam-buffer-toggle=
 - search: =C-c r s= (or =consult-org-roam-search=)
 - new daily: (=C-c r j=) =org-roam-dailies-capture-today=
-- update database: =org-roam-db-sync=  
+- update database: =org-roam-db-sync=
+- create a node: =org-id-get-create=
 
 * Writing
 - =ispell-word= suggests correct spelling
@@ -32,12 +33,18 @@
 * Coding: spell check existing code
 =M-x ispell-comments-and-strings=
 
+=M-i= Use i-menu to jump to definitions
+
 *  Coding: movement
-| key   | function                            |
-|-------+-------------------------------------|
-| C-M-a | move to the beginning of a function |
-| C-M-e | move to the end of  a function      |
+| key   | function                            |   |
+|-------+-------------------------------------+---|
+| C-M-a | move to the beginning of a function |   |
+| C-M-e | move to the end of  a function      |   |
+|       |                                     |   |
   
+
+* Coding: LISP formatting
+=C-m-q= (indent-pp-sexp): re-indent LISP
 
 * Scheme
 reference: https://github.com/emacsmirror/geiser
