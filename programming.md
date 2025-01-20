@@ -12,6 +12,7 @@
 - [Paradigms of Artificial Intelligence Programming](https://github.com/norvig/paip-lisp)
 - [Land of LISP by Conrad Barkski](http://landoflisp.com)
 - Lisp for the Web by Adam Tornhill
+- [Successful LISP](https://dept-info.labri.fr/~strandh/Teaching/PFS/Common/David-Lamkins/contents.html)
  
 ### Scheme programming
 - [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-4.html#%_toc_start) - the classic SICP.
@@ -21,6 +22,14 @@
 - [The Scheme Programming Language](https://www.scheme.com/tspl4/)
 - [An Introduction to Scheme and its Implementation](https://icem.folkwang-uni.de/~finnendahl/cm_kurse/doc/schintro/schintro_toc.html)
 - [Shido's Yet Another Scheme Tutorial](https://www.shido.info/lisp/idx_scm_e.html)
+- [10 ways GNU Guile is 10x better](https://www.draketo.de/software/guile-10x.html)
+- [Learn Scheme in 15 minutes](https://artanis.dev/scheme.html)
+- [A Scheme Primer](https://spritely.institute/static/papers/scheme-primer.html)
+- [An example of delimited continuations](https://wingolog.org/archives/2011/08/30/the-gnu-extension-language)
+- [Continuations Brief Summary](http://trop.in/blog/continuations-brief-summary) by Andrew Tropin
+
+### Haskell
+- [Learn You a Haskell for Great Good!](http://learnyouahaskell.com/chapters)
 
 ### Regular expression
 - [Regular expression buddy](http://www.regular-expressions.info/tutorial.html)
