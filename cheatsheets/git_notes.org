@@ -18,7 +18,7 @@ git revert <commit>
 
 *** Undo uncommitted changes
 
-Reset all files to the previous commit
+Reset all files to the previous commit.  Everything not in the previous commit is lost.
 #+begin_src sh
 git reset --hard
 #+end_src
@@ -68,3 +68,11 @@ First, "git fetch origin" to download all remote branches to the local repo.
 Then, "git checkout origin/master". This is the latest master branch.
 
 If it looks ok, checkout master branch, and merge origin/master to it
+** Configuration
+*** Do not display log in a different screen
+
+This is because oh-my-zsh does something with =less=.
+
+#+begin_src sh
+git config --global --replace-all core.pager "less -F -X"
+#+end_src
