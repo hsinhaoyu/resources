@@ -1,6 +1,8 @@
 #+TITLE: Emacs notes
 #+STARTUP: overview
 
+I AM TRYING TO MIGRATE EVERYTHIG HERE TO TIPS. DO NOT ADD NEW STUFF
+
 * Resources
 Use C-c C-o to open links
 - [[https://tuhdo.github.io/emacs-tutor.html][Emacs Mini Manual (PART 1) - THE BASICS]]
@@ -54,32 +56,9 @@ C-x C-SPC      This pops the global mark ring
 * iTerms2 setting
 - Under Session/Keys, set Left Option Key to ESC
 
-* delete
-| keys | function    |
-|------+-------------|
-| M-d  | kill a word |
-
-* magit 
-- after entering commit message, C-c C-c
-
 * ibuffer notes
 - use /m to add filter by a major mode, after that, use /g to give it a name
 
-* markdown 
-- [more info](https://leanpub.com/markdown-mode/)
-- C-c C-c o: preview
-
-* Deft notes
-- [more info](https://jblevins.org/projects/deft/)
-
-| key     | function                      |
-|---------+-------------------------------|
-| C-c C-q | quit                          |
-| C-c C-n | create new file               |
-| C-c C-m | create new file with filename |
-| C-c C-g | refresh                       |
-| C-c C-d | delete file                   |
-| C-c C-r | rename file                   |
 
 * ORG 
 ** Tutorials and resources

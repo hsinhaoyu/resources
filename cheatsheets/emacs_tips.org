@@ -29,6 +29,7 @@
 
 * Deleting
 - Delete the word that the point is in: M-b then M-d (i.e., first move to the beginning of a word, and then delete it)
+- Delete trailing whitespace: M-\  
 
 * Coding: spell check existing code
 =M-x ispell-comments-and-strings=
