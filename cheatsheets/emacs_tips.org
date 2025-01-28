@@ -26,10 +26,9 @@
 
 * Window management
 =M-x window-swap-states= swaps the content of two windows.
-
 * Deleting
 - Delete the word that the point is in: M-b then M-d (i.e., first move to the beginning of a word, and then delete it)
-- Delete trailing whitespace: M-\  
+- Delete trailing whitespace: =M-\=
 
 * Coding: spell check existing code
 =M-x ispell-comments-and-strings=
@@ -37,12 +36,16 @@
 =M-i= Use i-menu to jump to definitions
 
 *  Coding: movement
-| key   | function                            |   |
-|-------+-------------------------------------+---|
-| C-M-a | move to the beginning of a function |   |
-| C-M-e | move to the end of  a function      |   |
-|       |                                     |   |
-  
+| key   | function                            |                       |
+|-------+-------------------------------------+-----------------------|
+| C-M-a | move to the beginning of a function |                       |
+| C-M-e | move to the end of  a function      |                       |
+| M-.   | find the definition of a function   | xref-find-definitions |
+| M-?   | find references to a function       | ref-find-references   |
+
+eglot-find-declaration
+eglot-find-implementation
+eglot-find-typeDefinition
 
 * Coding: LISP formatting
 =C-m-q= (indent-pp-sexp): re-indent LISP
@@ -57,3 +60,6 @@ Expand macro: =C-c C-m=
 Use =list-packages= to enter the package manager
 hit =U= to mark all packages that need upgrades
 to see them, filter marked
+* Python programming
+Language server should start when a .py file is opened.  If not, =M-x eglot=.
+To start a python REPL, =M-x run-python=.
