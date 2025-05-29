@@ -27,6 +27,7 @@
 - [A Scheme Primer](https://spritely.institute/static/papers/scheme-primer.html)
 - [An example of delimited continuations](https://wingolog.org/archives/2011/08/30/the-gnu-extension-language)
 - [Continuations Brief Summary](http://trop.in/blog/continuations-brief-summary) by Andrew Tropin
+- [Extending a Language - Writing Powerful Macros in Scheme](https://mnieper.github.io/scheme-macros/README.html)
 
 ### Haskell
 - [Learn You a Haskell for Great Good!](http://learnyouahaskell.com/chapters)
