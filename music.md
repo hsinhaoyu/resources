@@ -15,3 +15,6 @@
 
 ### The Beatles
 - [Analyses of Beatles' songs](https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/awp-notes_on.shtml)
+
+### Gamelan
+- [Interactive Gamelan](https://interactivegamelan.arts.unsw.edu.au/interactive-gamelan-compositions)
