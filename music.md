@@ -18,3 +18,4 @@
 
 ### Gamelan
 - [Interactive Gamelan](https://interactivegamelan.arts.unsw.edu.au/interactive-gamelan-compositions)
+- [Syllabus of Michael Tenzer's Music in Bali class](http://www.michaeltenzer.com/Music_428_Bali_Syllabus.pdf)
