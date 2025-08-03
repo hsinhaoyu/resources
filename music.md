@@ -18,4 +18,5 @@
 
 ### Gamelan
 - [Interactive Gamelan](https://interactivegamelan.arts.unsw.edu.au/interactive-gamelan-compositions)
+- [The gamelan pelog scale of Central Java as an example of a non-harmonic musical scale](http://www.neuroscience-of-music.se/pelog_main.htm)
 - [Syllabus of Michael Tenzer's Music in Bali class](http://www.michaeltenzer.com/Music_428_Bali_Syllabus.pdf)
