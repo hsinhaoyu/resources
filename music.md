@@ -21,3 +21,4 @@
 - [The gamelan pelog scale of Central Java as an example of a non-harmonic musical scale](http://www.neuroscience-of-music.se/pelog_main.htm)
 - [Sample library of Casa da Música Javanese Gamelan](https://github.com/Digitopia/CDM-GAMELAN-SAMPLE-LIBRARY/tree/master)
 - [Syllabus of Michael Tenzer's Music in Bali class](http://www.michaeltenzer.com/Music_428_Bali_Syllabus.pdf)
+- [Scale Workshop](https://sevish.com/scaleworkshop/?version=2.5.7)
