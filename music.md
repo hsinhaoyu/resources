@@ -27,3 +27,6 @@
 - [Intro to World Music class](https://guides.library.missouristate.edu/c.php?g=701762&p=4980608)
 - [Lectures on Youtube](https://www.youtube.com/playlist?list=PLdLiRaajwSXRNjebKUboHcGegVmKZJqKQ)
 - [World Field Recordings Youtube Channel](https://www.youtube.com/@AmbientscapeChannel)
+
+### Programming
+- [Strudel](https://strudel.cc)
