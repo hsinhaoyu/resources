@@ -6,6 +6,7 @@
 - [Chord Identifier](https://www.scales-chords.com/chordid.php)
 - [aQWERTYon for Music Theory: a web app for visualizing scales](https://apps.musedlab.org/aqwertyon/theory/C-4-dorian)
 - [Geometrical relationships in the Circle of Fifth](https://jjensen.org/CircleOf5thsFun.html)
+- [Open Music Theory book](https://viva.pressbooks.pub/openmusictheory/)
 
 ### Blues
 - [Blues harmony primer](https://www.ethanhein.com/wp/2022/blues-harmony-primer)
